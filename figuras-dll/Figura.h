@@ -14,6 +14,7 @@ class Figura {
 class Circulo : public Figura {
 	private:
 		double radio;
+		double M_PI = 3.1416;
 	public:
 		Circulo(double r) : radio(r) {}
 		double calcularPerimetro() const override { return 2 * M_PI * radio; }

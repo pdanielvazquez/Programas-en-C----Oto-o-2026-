@@ -1,0 +1,9 @@
+EXPORTS
+    calcularArea @1
+    calcularPerimetro @2
+    calcularVolumen @3
+    crearCirculo @4
+    crearCuadro @5
+    crearPoligono @6
+    crearTriangulo @7
+    destruirFigura @8
