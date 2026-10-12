@@ -43,10 +43,10 @@ class Triangulo : public Figura {
 			lado2(l2), 
 			lado3(l3) {} 
 		double calcularPerimetro() const override { 
-			return lado1 + lado2 + lado3; 
+			return lado1 + lado2 + lado3;
 		} 
 		double calcularArea() const override { 
-			return (base * altura) / 2.0; 
+			return (base * altura) / 2.0;
 		} 
 }; 
 // Subclase Polígono Regular (n lados) 
