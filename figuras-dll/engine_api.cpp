@@ -1,21 +1,9 @@
 #include "Figura.h"
-#include <windows.h>
 #if defined(_WIN32) || defined(_WIN64)
 	#define EXPORT __declspec(dllexport)
 #else
 	#define EXPORT __attribute__((visibility("default")))
 #endif
-
-BOOL APIENTRY DllMain(HINSTANCE hInst, DWORD reason, LPVOID reserved) {
-    switch (reason) {
-        case DLL_PROCESS_ATTACH:
-        case DLL_THREAD_ATTACH:
-        case DLL_THREAD_DETACH:
-        case DLL_PROCESS_DETACH:
-            break;
-    }
-    return TRUE;
-}
 
 extern "C" {
 	// Funciones Fábrica (Instanciación en el Heap de C++)

@@ -1,7 +1,5 @@
 #ifndef FIGURA_H
 #define FIGURA_H
-#include<cmath>
-#include<iostream>
 // Clase Base Abstracta
 class Figura {
 	public:
@@ -14,11 +12,11 @@ class Figura {
 class Circulo : public Figura {
 	private:
 		double radio;
-		double M_PI = 3.1416;
+		double pi = 3.1416;
 	public:
 		Circulo(double r) : radio(r) {}
-		double calcularPerimetro() const override { return 2 * M_PI * radio; }
-		double calcularArea() const override { return M_PI * radio * radio; }
+		double calcularPerimetro() const override { return 2 * pi * radio; }
+		double calcularArea() const override { return pi * radio * radio; }
 };
 // Subclase Cuadro
 class Cuadro : public Figura {
